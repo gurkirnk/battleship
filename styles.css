@@ -1,0 +1,48 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #758576;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.container {
+  text-align: center;
+  background-color: #e6ede6;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#board {
+  display: grid;
+  grid-template-columns: repeat(6, 50px);
+  grid-template-rows: repeat(5, 50px);
+  gap: 5px;
+  margin: 20px auto;
+}
+.cell {
+  width: 50px;
+  height: 50px;
+  background-color; #a3b9c2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  border: 1px solid #000;
+}
+.cell.hit {
+  background-color: #474747
+}
+.cell.miss {
+  background-color: #e4e6eb
+}
+.input-section {
+  margin: 20px 0;
+}
+#message {
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 20px;
+}
